@@ -12,3 +12,25 @@ html {
 body {
     min-height: 100vh;
 }
+
+header {
+    padding: 2.5rem 1.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo img{
+    height: 3rem;
+    width: auto;
+}
+.nav__menu div {
+    height: 2rem;
+    width: 4rem;
+    background-image: url('./news-homepage-main/assets/images/icon-menu.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
