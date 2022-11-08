@@ -34,3 +34,17 @@ header {
     background-position: center;
     background-size: contain;
 }
+
+.main {
+    padding: 0 1.5rem;
+}
+.main__image {
+    height: 30rem;
+}
+.main__image div{
+    height: 100%;
+    background-image: url('./news-homepage-main/assets/images/image-web-3-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
