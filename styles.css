@@ -12,12 +12,15 @@ html {
 body {
     min-height: 100vh;
     background-color: hsl(36, 100%, 99%);
+    display: grid;
+    justify-items: center;
 }
 
 /* NAVIGATION SECTION */
 
 header {
     padding: 2.5rem 1.5rem;
+    min-width: 100%;
     max-width: 50rem;
 }
 
@@ -191,4 +194,39 @@ article > section {
     font-size: 1.5rem;
     font-weight: 400;
     color: hsl(236, 13%, 42%);
+}
+
+/* RESPONSIVE */
+
+@media  screen and (min-width: 1440px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "nav nav nav"
+            "main main aside"
+            "main main aside"
+            "article article article";
+    }
+
+    header {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    article {
+        grid-area: article;
+    }
+
+    article > section {
+        display: flex;
+        flex-direction: row;
+    }
 }
