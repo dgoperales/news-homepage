@@ -207,6 +207,9 @@ article > section {
             "main main aside"
             "main main aside"
             "article article article";
+        justify-items: center;
+        /* justify-content: center; */
+        padding: 0 5rem;
     }
 
     header {
@@ -217,8 +220,37 @@ article > section {
         grid-area: main;
     }
 
+    .main {
+        grid-template-areas: 
+            "image image"
+            "title text";
+        max-width: none;
+        width: 70rem;
+        gap: 3rem;
+        padding: 0;
+    }
+
+    .main__image {
+        grid-area: image;
+        width: 70rem;
+    }
+
+    .main__image div {
+        background-image: url('./news-homepage-main/assets/images/image-web-3-desktop.jpg');
+    }
+
+    .main__title {
+        grid-area: title;
+    }
+
+    .main__text {
+        grid-area: text;
+    }
+
     aside {
         grid-area: aside;
+        width: 35rem;
+        padding: 0;
     }
 
     article {
