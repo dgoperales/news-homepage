@@ -213,7 +213,7 @@ body > #article {
             "article article article";
         justify-items: center;
         /* justify-content: space-between; */
-        padding: 3rem 15rem;
+        padding: 0rem 15rem;
         column-gap: 3rem;
     }
 
@@ -252,7 +252,7 @@ body > #article {
             "image image"
             "title text";
         max-width: none;
-        gap: 3rem 6rem;
+        gap: 3rem 3.5rem;
         padding: 0;
     }
 
@@ -278,9 +278,19 @@ body > #article {
         grid-area: text;
     }
 
+    /* ASIDE SECTION */
+
     aside {
         grid-area: aside;
         padding: 0;
+    }
+
+    /* ARTICLES SECTION */
+
+    body > #article {
+        max-width: none;
+        padding: 3.5rem 0;
+        min-width: 100%;
     }
 
     #article {
@@ -290,11 +300,10 @@ body > #article {
     #article > section {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        /* align-items: center; */
+        justify-content: space-between;
     }
 
     .articles {
-        width: 100rem;
+        width: 36rem;
     }
 }
