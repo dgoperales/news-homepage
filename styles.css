@@ -214,6 +214,7 @@ body > #article {
         justify-items: center;
         /* justify-content: space-between; */
         padding: 3rem 15rem;
+        column-gap: 3rem;
     }
 
     /* NAVIGATION SECTION */
@@ -279,7 +280,6 @@ body > #article {
 
     aside {
         grid-area: aside;
-        width: 35rem;
         padding: 0;
     }
 
