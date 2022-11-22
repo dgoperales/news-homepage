@@ -215,7 +215,6 @@ body > #article {
             "main main aside"
             "article article article";
         justify-items: center;
-        /* justify-content: space-between; */
         padding: 0rem 15rem;
         column-gap: 3rem;
     }
@@ -327,4 +326,30 @@ body > #article {
 
 .articles__title:hover {
     color: hsl(5, 85%, 63%);
+}
+
+/* MOBILE MENU */
+
+#mobile-menu {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    padding-left: 3rem;
+    background-color: hsl(36, 100%, 99%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    display: none;
+}
+
+#mobile-menu div {
+    padding: 1.5rem 0;
+}
+
+#mobile-menu a {
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
 }
