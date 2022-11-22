@@ -32,6 +32,7 @@ header {
 .nav__logo img{
     height: 3rem;
     width: auto;
+    cursor: pointer;
 }
 .nav__menu div {
     height: 2rem;
@@ -129,6 +130,7 @@ aside {
     font-weight: 700;
     letter-spacing: .1rem;
     color: hsl(36, 100%, 99%);
+    cursor: pointer;
 }
 
 .aside__topics p {
@@ -191,6 +193,7 @@ body > #article {
     font-size: 1.7rem;
     font-weight: 700;
     color: hsl(240, 100%, 5%);
+    cursor: pointer;
 }
 
 .articles__description {
@@ -306,4 +309,22 @@ body > #article {
     .articles {
         width: 36rem;
     }
+}
+
+/* ACTIVE STATES */
+
+.nav__desktop a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.main__text button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+.aside__topics h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.articles__title:hover {
+    color: hsl(5, 85%, 63%);
 }
