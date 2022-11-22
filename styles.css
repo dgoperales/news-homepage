@@ -42,6 +42,10 @@ header {
     background-size: contain;
 }
 
+.nav__desktop {
+    display: none;
+}
+
 /* MAIN SECTION */
 
 .main {
@@ -145,12 +149,12 @@ aside {
 
 /* ARTICLES SECTION  */
 
-body > article {
+body > #article {
     padding: 3.5rem 1.5rem 4rem 1.5rem;
     max-width: 50rem;
 }
 
-article > section {
+#article > section {
     display: flex;
     flex-direction: column;
 }
@@ -208,13 +212,35 @@ article > section {
             "main main aside"
             "article article article";
         justify-items: center;
-        /* justify-content: center; */
-        padding: 0 5rem;
+        /* justify-content: space-between; */
+        padding: 3rem 15rem;
     }
+
+    /* NAVIGATION SECTION */
 
     header {
         grid-area: nav;
+        width: 114rem;
+        padding: 3.5rem 0;
     }
+
+    .nav__desktop {
+        display: flex;
+        font-size: 1.5rem;
+        gap: 5rem;
+    }
+
+    .nav__desktop a {
+        color: hsl(236, 13%, 42%);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    /* MAIN SECTION */
 
     main {
         grid-area: main;
@@ -225,22 +251,27 @@ article > section {
             "image image"
             "title text";
         max-width: none;
-        width: 70rem;
-        gap: 3rem;
+        /* width: 70rem; */
+        gap: 3rem 6rem;
         padding: 0;
     }
 
     .main__image {
         grid-area: image;
-        width: 70rem;
+        width: 76rem;
     }
 
     .main__image div {
         background-image: url('./news-homepage-main/assets/images/image-web-3-desktop.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .main__title {
         grid-area: title;
+        font-size: 3.5rem;
+        line-height: 5.5rem;
     }
 
     .main__text {
@@ -253,12 +284,18 @@ article > section {
         padding: 0;
     }
 
-    article {
+    #article {
         grid-area: article;
     }
 
-    article > section {
+    #article > section {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .articles {
+        width: 100rem;
     }
 }
