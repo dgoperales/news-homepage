@@ -251,14 +251,13 @@ body > #article {
             "image image"
             "title text";
         max-width: none;
-        /* width: 70rem; */
         gap: 3rem 6rem;
         padding: 0;
     }
 
     .main__image {
         grid-area: image;
-        width: 76rem;
+        width: 100%;
     }
 
     .main__image div {
