@@ -342,7 +342,8 @@ body > #article {
     align-items: flex-start;
     justify-content: center;
     z-index: 1;
-    /* display: none; */
+    transition: all .5s ease;
+    display: none;
 }
 
 .mobile-menu__options div {
@@ -368,4 +369,15 @@ body > #article {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+/* JAVASCRIPT STYLES */
+
+.active {
+    transform: translate(600px);
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
 }
